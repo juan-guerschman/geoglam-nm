@@ -79,7 +79,7 @@
             },
             {
               "id": "662d6a05-6bc9-40ab-aa4f-b9822dd22fcd",
-              "name": "Observed major vegetation subgroups, from Australia’s NVIS database",
+              "name": "Observed major vegetation subgroups, from Australia�s NVIS database",
               "debugFormat": "Esri REST",
               "type": "ckan-resource",
               "url": "proxy/_60s/https://data.gov.au",
@@ -94,13 +94,12 @@
                     "content": "https://data.gov.au/dataset/2016-soe-lan-climate-scenarios-observed"
                   }
                 ],
-                "clipToRectangle": true,
-                "ignoreUnknownTileErrors": true
+                "cacheDuration": "1h"
               }
             },
             {
               "id": "859254cb-58d8-4b96-9613-b330f7ba9ad6",
-              "name": "Australian land use at the national scale, 2010–11",
+              "name": "Australian land use at the national scale, 2010�11",
               "debugFormat": "Esri REST",
               "type": "ckan-resource",
               "url": "proxy/_60s/https://data.gov.au",
@@ -115,8 +114,7 @@
                     "content": "https://data.gov.au/dataset/2016-soe-lan-aus-land-use"
                   }
                 ],
-                "clipToRectangle": true,
-                "ignoreUnknownTileErrors": true
+                "cacheDuration": "1h"
               }
             },
             {
@@ -136,8 +134,7 @@
                     "content": "https://data.gov.au/dataset/2016-soe-lan-integrated-vegetation"
                   }
                 ],
-                "clipToRectangle": true,
-                "ignoreUnknownTileErrors": true
+                "cacheDuration": "1h"
               }
             },
             {
@@ -157,8 +154,7 @@
                     "content": "https://data.gov.au/dataset/2016-soe-lan-soil-classification"
                   }
                 ],
-                "clipToRectangle": true,
-                "ignoreUnknownTileErrors": true
+                "cacheDuration": "1h"
               }
             },
             {
@@ -190,9 +186,7 @@
               "dateFormat": {
                 "currentTime": "mmmm yyyy",
                 "timelineTic": "mmm yyyy"
-              },
-              "clipToRectangle": true,
-              "ignoreUnknownTileErrors": true
+              }
             },
             {
               "id": "5270734b-48bc-41e6-9723-583dce66c356",
@@ -206,9 +200,7 @@
               "dateFormat": {
                 "currentTime": "mmmm yyyy",
                 "timelineTic": "mmm yyyy"
-              },
-              "clipToRectangle": true,
-              "ignoreUnknownTileErrors": true
+              }
             },
             {
               "id": "835b0bc4-a803-4c75-913c-5200c7b8f35f",
@@ -222,9 +214,7 @@
               "dateFormat": {
                 "currentTime": "mmmm yyyy",
                 "timelineTic": "mmm yyyy"
-              },
-              "clipToRectangle": true,
-              "ignoreUnknownTileErrors": true
+              }
             },
             {
               "id": "25aec031-b165-4f9f-a346-e338c2a332fa",
@@ -238,9 +228,7 @@
               "dateFormat": {
                 "currentTime": "mmmm yyyy",
                 "timelineTic": "mmm yyyy"
-              },
-              "clipToRectangle": true,
-              "ignoreUnknownTileErrors": true
+              }
             }
           ]
         },
@@ -270,19 +258,28 @@
             },
             {
               "id": "061918ff-d997-4c42-8e5e-6dd9452ceb61",
-              "name": "Local Government Areas",
+              "name": "Local Government Areas (Australian Bureau of Statistics)",
               "type": "esri-mapServer",
               "url": "http://censusdata.abs.gov.au/arcgis/rest/services/ASGS2016/ASGS2016BoundariesOnline/MapServer/7",
               "clipToRectangle": true,
               "ignoreUnknownTileErrors": true
             },
             {
-              "id": "57ab8c75-c14f-4f65-879d-b14d0a9d7f42",
-              "name": "Land Tenure",
+              "name": "River Regions (Bureau of Meteorology)",
               "type": "wms",
-              "url": "http://services.ga.gov.au/gis/services/Land_Tenure_WM/MapServer/WMSServer",
-              "layers": "Land_Tenure",
+              "url": "http://geofabric.bom.gov.au/simplefeatures/ows",
+              "layers": "ahgf_hrr:RiverRegion",
               "opacity": 1,
+              "clipToRectangle": true,
+              "ignoreUnknownTileErrors": true
+            },
+            {
+              "name": "Mesh Blocks (Australian Bureau of Statistics)",
+              "type": "wms",
+              "layers": "admin_bnds:MB_2011_ACT,admin_bnds:MB_2011_NSW,admin_bnds:MB_2011_NT,admin_bnds:MB_2011_OT,admin_bnds:MB_2011_QLD,admin_bnds:MB_2011_SA,admin_bnds:MB_2011_TAS,admin_bnds:MB_2011_VIC,admin_bnds:MB_2011_WA",
+              "opacity": 1,
+              "url": "http://geoserver.nationalmap.nicta.com.au/admin_bnds_abs/ows",
+              "legendUrls": [],
               "clipToRectangle": true,
               "ignoreUnknownTileErrors": true
             }
